@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #e63946;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.container {
+  box-sizing: content-box;
+  background-color: aliceblue;
+  padding: 2rem;
+  text-align: justify;
+  width: 50%;
+  overflow: hidden;
+}
+
+img {
+  width: 50%;
+  transition: all 0.4s ease-in;
+}
+
+.snow-img,
+.mountains {
+  float: left;
+  margin-right: 1rem;
+  transform: translateX(-150%);
+}
+
+.lake-house,
+.canoeing {
+  float: right;
+  margin-left: 1rem;
+transform: translateX(150%);
+}
+
+p {
+  font-size: 1.5rem;
+  text-indent: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
